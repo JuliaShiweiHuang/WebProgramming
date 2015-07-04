@@ -1,0 +1,179 @@
+<!-- this is the markup document that should contains a form
+     that represents the choices available on the 
+     Dado Tea Lunch Special paper form -->
+     
+<!-- remember to use action="http://cscis12.dce.harvard.edu/echo" for the form element -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Dado Tea Lunch Special</title>
+		<link rel="stylesheet" href="form.css" type="text/css" />
+	</head>
+	<body>
+		<h1>Dado Tea Lunch Special</h1>
+		<p>Monday - Friday</br>
+		11am - 3am</br>
+		$7.24</p>
+		<p>Includes sandwich, snack, and drink.</p>
+		<section>
+		<fieldset>
+			<legend>Order Information</legend><br>
+
+			<form method="post" action="http://cscie12.dce.harvard.edu/echo" enctype="application/x-www-form-urlencoded"><!--?????Action and Enctype????????-->
+				<div><strong>Name</strong><br><!--This is a line break-->
+					<input type="text" name="name"/><br> <!--This is a another line break right after "input type"-->
+					<br/>
+					<input type="radio" name="name" value="here" />Here <!--?????????????????????QUESTION: WHAT IS NAME AND VALUE????????????????????????-->
+					</br>
+					<input type="radio" name="name" value="toGo" />To Go
+					</br>
+					<p>
+				</div>
+		</fieldset>
+		</section>
+		
+		<section>
+			<fieldset>
+				<legend>Sandwiches</legend><br>
+			<form method="post" action="http://cscie12.dce.harvard.edu/echo" enctype="application/x-www-form-urlencoded">
+				<div><strong>Monday</strong><br>
+					<input type="radio" name="sandwiches" value="tofu" />Pesto Tofu Salad
+				</br>
+					<input type="radio" name="sandwiches" value="chicken" />Chicken Salad
+				</br>
+				<p>
+				</div>
+				<p>
+				<div><strong>Tuesday</strong><br>
+					<input type="radio" name="sandwiches" value="greek" />Greek Salad Wrap
+				</br>
+					<input type="radio" name="sandwiches" value="tuna" />Tuna Salad
+				</br>
+				</div>
+				<p>
+				<div><strong>Wednesday</strong><br>
+					<input type="radio" name="sandwiches" value="hummus" />Greek Salad Wrap
+				</br>
+					<input type="radio" name="sandwiches" value="tuna" />Tuna Salad
+				</br>
+				</div>
+				<p>
+				<div><strong>Thursday</strong><br>
+					<input type="radio" name="sandwiches" value="carrot" />Carrot-Ginger Wrap
+				</br>
+					<input type="radio" name="sandwiches" value="egg" />Egg Salad
+				</br>
+				</div>
+
+				<p>
+				<div><strong>Friday</strong><br>
+					<input type="radio" name="sandwiches" value="veggie" />Veggie
+				</br>
+					<input type="radio" name="sandwiches" value="tuna" />Tuba Salad
+				</br>
+				</div>
+				<p>
+			</fieldset>
+		</section>
+
+		<section>
+		<fieldset>
+			<legend>Sandwich Options</legend>
+			<p>
+			<form method="post" action="http://cscie12.dce.harvard.edu/echo" enctype="application/x-www-form-urlencoded">
+				<div><strong>Breads</strong><br>
+					<input type="radio" name="breads" value="grain" />7 Grain
+					</br>
+					<input type="radio" name="breads" value="french" />French
+					</br>
+					<input type="radio" name="breads" value="wheat" />Wheat Wrap
+					</br>
+					<p>
+				<div><strong>Cheeses</strong>(add 50c)</br>
+					<input type="radio" name="cheese" value="cheese" />No Cheese
+					</br>
+					<input type="radio" name="cheese" value="feta" />Feta
+					</br>
+					<input type="radio" name="cheese" value="mozzarella" />Fresh Mozzarella
+					</br>
+					<input type="radio" name="cheese" value="swiss" />Swiss
+				</br>
+				<p>
+
+				<div><strong>Spreads</strong><br> <!--???????????????IS THIS MULTIPLE CHECKBOX OR NOT??????????????-->
+					<input type="checkbox" name="spreads" value="mayonnaise" />Mayonnaise
+					</br>
+					<input type="checkbox" name="spreads" value="honeyMustard" />Honey Mustard
+					</br>
+					<input type="checkbox" name="spreads" value="pesto" />Pesto
+					</br>
+					<input type="checkbox" name="spreads" value="olive" />Olive
+				</br>
+				<p>
+
+				<div><strong>Fillings</strong></br>
+					<input type="checkbox" name="fillings" value="tomato" />Tomato
+					</br>
+					<input type="checkbox" name="fillings" value="greens" />Mixed Greens
+					</br>
+					<input type="checkbox" name="fillings" value="cucumber" />Cucumber
+					</br>
+					<input type="checkbox" name="fillings" value="onion" />Red Onion
+				</br>
+				<p>
+			</fieldset>
+		</section>
+
+		<section>
+			<fieldset>
+				<legend>Snack and Drink</legend>
+				<p>
+			<form method="post" action="http://cscie12.dce.harvard.edu/echo" enctype="application/x-www-form-urlencoded">
+				<div><strong>Snacks</strong></br>
+					<input type="radio" name="snacks" value="apple" />Apple
+					</br>
+					<input type="radio" name="snacks" value="banana" />Banana
+					</br>
+					<input type="radio" name="snacks" value="potatoChip" />Potato Chip
+					</br>
+
+			</form>
+
+
+			<br><strong>Drinks</strong>
+
+               <form method="post" action="http://cscis12.dce.harvard.edu/echo" enctype="application/x-www-form-urlencoded">
+                  <select name="drinks">
+                     <optgroup label="Black Tea">
+                        <option>Hot Black Tea - Keemun</option>
+                        <option>Hot Black Tea - Decaf Keemun</option>
+                        <option>Iced Black Tea - Keemun</option>
+                        <option>Iced Black Tea - Decaf Keemun</option>
+                     </optgroup>
+                     <optgroup label="Green Tea">
+                        <option>Hot Green Tea - Sencha</option>
+                        <option>Hot Green Tea - Decaf</option>
+                        <option>Iced Green Tea - Sencha</option>
+                        <option>Iced Green Tea - Decaf</option>
+                     </optgroup>
+                     <optgroup label="Coffee">
+                        <option>Hot Coffee</option>
+                        <option>Hot Decaf Coffee</option>
+                        <option>Iced Coffee</option>
+                        <option>Iced Decaf Coffee</option>
+                     </optgroup>
+                  </select>
+                  	</br><input type="checkbox" name="drinks" value="drink" />Large drink (add 50c)</br>
+                  	<br>
+                </fieldset>
+            </section>
+
+                  <div>
+                     <input type="submit"/>
+                  </div>
+               </form>
+		
+
+	</body>
+</html>
