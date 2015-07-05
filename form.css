@@ -1,0 +1,19 @@
+/* CSS Rules for the Dado Tea Lunch Special Form */
+h1 {
+	color: orange;
+	margin-left: 25%;
+}
+
+p {
+	margin-left: 25%;
+}
+
+fieldset {
+	border-color: #32CD32;
+	margin-left: 25%;
+	width: 50%;
+}
+legend {
+	color: orange;
+	font-weight: bold;
+}
